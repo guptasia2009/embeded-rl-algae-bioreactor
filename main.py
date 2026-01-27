@@ -175,3 +175,14 @@ plt.ylabel("Biomass Concentration")
 plt.legend()
 plt.title("RL vs Static Bioreactor Control")
 plt.show()
+
+# ---------------------- PLOT RL DECISIONS ---------------------- #
+plt.figure(figsize=(8,5))
+plt.plot(rl_data["time"], rl_data["nutrient_input"], label="Nutrient Input")
+plt.plot(rl_data["time"], rl_data["light_input"], label="Light Input")
+plt.xlabel("Time (hours)")
+plt.ylabel("Control Actions")
+plt.legend()
+plt.title("RL Agent Decisions Over Time")
+plt.show()
+
