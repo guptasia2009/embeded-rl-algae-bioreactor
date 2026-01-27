@@ -1,6 +1,6 @@
 numpy>=1.23
 scipy>=1.10
-gym>=0.26
+gymnasium>=0.29
 stable-baselines3>=2.1
 torch>=2.0
 matplotlib>=3.7
